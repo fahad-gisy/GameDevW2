@@ -19,11 +19,15 @@ public class _PlayerJump : MonoBehaviour
     void Update()                         //player's pos  // created empty      //created layer named it ground
     {                                    //start point     //end point          //the Layer
        bool grounded = Physics.Linecast(transform.position,groundCheck.position,groundLayer); // creating linecast to check is our player on the ground!!
-          if(grounded == true) // if the player on the ground
-              canJump = true; // so he can jump
-            else // otherwise NO JUMPING 
-              canJump = false;  
+       if (grounded == true)
+       { // if the player on the ground
+           canJump = true; // so he can jump
+       } else // otherwise NO JUMPING 
+           canJump = false;
+          
 
+
+          
             Jump(); // mothed doing the jumping part > rb.AddForce(vector3.up * 500)
     }
 
