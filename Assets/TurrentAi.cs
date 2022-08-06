@@ -28,12 +28,12 @@ public class TurrentAi : MonoBehaviour
         if (playerDistance <= 15 && detecetd == false)
         {
             detecetd = true;
-            InvokeRepeating("Shooting",0,1);
+            InvokeRepeating("Shooting",2.0f,0.3f); // time shooting repeating 
         }
         else if(playerDistance > 15)
         {
             detecetd = false;
-            CancelInvoke("Shooting");
+            CancelInvoke("Shooting"); // if player out of distance stop shooting
         }
         
     }

@@ -12,7 +12,7 @@ public class Shotting : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(Vector3.right * bulletSpeed); // move on X * speed
+        rb.AddForce(transform.forward * bulletSpeed); // move on X * speed
         Invoke("DeleteBullet",bulletLifeSpan); // after life span the bullet get destroyed
     }
 

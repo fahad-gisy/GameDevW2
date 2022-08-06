@@ -19,7 +19,7 @@ public class _Wining : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.CompareTag("Player")){
-             SceneManager.LoadScene("SampleScene");
+             SceneManager.LoadScene("level2");
              Debug.Log("WE GOT A WINNER");
         }
     }

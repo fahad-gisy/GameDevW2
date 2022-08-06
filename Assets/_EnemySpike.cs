@@ -20,7 +20,7 @@ public class _EnemySpike : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.CompareTag("Player")){
-             SceneManager.LoadScene("SampleScene");
+             SceneManager.LoadScene("level1");
              Debug.Log("YOU LOSE");
         }
     }

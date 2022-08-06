@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Stair
   - Enemy
+  - Ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Ground
